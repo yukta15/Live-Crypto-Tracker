@@ -1,0 +1,30 @@
+.header_logo {
+    display: block;
+    max-width: 100%; /* Ensures it scales down on smaller screens */
+    width: 30%; /* Default for larger screens */
+    margin: 2% auto; /* Centers the logo horizontally */
+}
+
+/* Tablet screens (768px and below) */
+@media (max-width: 1024px) {
+    .header_logo {
+        width: 40%; /* Slightly larger for tablets */
+        margin: 2% auto; /* Keep centered */
+    }
+}
+
+/* Mobile screens (480px and below) */
+@media (max-width: 768px) {
+    .header_logo {
+        width: 50%; /* Adjust width for smaller screens */
+        margin: 5% auto; /* Increase margin for spacing */
+    }
+}
+
+/* Small mobile screens (320px and below) */
+@media (max-width: 480px) {
+    .header_logo {
+        width: 60%; /* Adjust width for extra small screens */
+        margin: 5% auto;
+    }
+}

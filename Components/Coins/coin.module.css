@@ -1,0 +1,151 @@
+.coin_container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.coin_row {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    height: 80px;
+    border-bottom: 1px solid #2e2e2e;
+    width: 90%; /* Adjust width for responsiveness */
+    max-width: 1000px;
+    padding: 0.5rem 1rem;
+}
+
+.coin_row:hover {
+    background: #000080;
+    color: white;
+}
+
+/* Coin details */
+.coin {
+    display: flex;
+    align-items: center;
+    padding-right: 16px;
+    min-width: 220px; /* Ensure space for name & image */
+}
+
+/* Coin image */
+.coin_img {
+    height: 30px;
+    width: 30px;
+    margin-right: 10px;
+}
+
+/* Coin name */
+.coin_h1 {
+    font-size: 16px;
+    font-weight: bold;
+    white-space: nowrap; /* Prevent wrapping */
+}
+
+/* Coin symbol */
+.coin_symbol {
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+/* Coin data - adjust widths */
+.coin_data {
+    display: flex;
+    text-align: right;
+    justify-content: space-between;
+    width: 100%;
+    flex-wrap: nowrap;
+}
+
+/* Increased width for prices */
+.coin_price {
+    width: 150px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Increased width for volume */
+.coin_volume {
+    width: 170px;
+    text-align: center;
+}
+
+/* Reduced market cap width */
+.coin_marketcap {
+    width: 200px;
+    font-size: 14px;
+}
+
+/* Adjusted percentage width */
+.coin_percent {
+    width: 90px;
+    text-align: center;
+}
+
+/* Conditional coloring */
+.red {
+    color: #f00606;
+}
+
+.green {
+    color: #13c783;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 1024px) {
+    .coin_row {
+        width: 95%;
+        padding: 0.5rem;
+    }
+
+    .coin_h1 {
+        font-size: 14px;
+        width: auto;
+    }
+
+    .coin_price,
+    .coin_volume,
+    .coin_marketcap,
+    .coin_percent {
+        width: 100px;
+    }
+}
+
+/* Mobile screens */
+@media (max-width: 768px) {
+    .coin_row {
+        flex-direction: column;
+        align-items: flex-start;
+        height: auto;
+        padding: 0.5rem;
+        width: 95%;
+    }
+
+    .coin {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .coin_h1 {
+        font-size: 14px;
+        width: auto;
+    }
+
+    .coin_data {
+        flex-direction: column;
+        text-align: left;
+        width: 100%;
+        padding-top: 0.5rem;
+    }
+
+    .coin_price,
+    .coin_volume,
+    .coin_marketcap,
+    .coin_percent {
+        width: 100%;
+        text-align: left;
+        padding: 5px 0;
+    }
+}
